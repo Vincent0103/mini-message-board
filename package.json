@@ -7,6 +7,10 @@
   },
   "private": true,
   "type": "module",
+  "scripts": {
+    "start": "bun src/app.js",
+    "watch": "bun --watch src/app.js"
+  },
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^5.1.0"
