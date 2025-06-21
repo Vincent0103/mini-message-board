@@ -1,0 +1,14 @@
+{
+  "name": "mini-message-board",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "dotenv": "^16.5.0"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}

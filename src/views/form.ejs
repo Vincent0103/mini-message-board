@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Message Form</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Message Form</h1>
+      </header>
+      <section>
+        <form method="POST" action="/new">
+          <div>
+            <label for="authorName">Author name : </label>
+            <input type="text" name="authorName" id="authorName" />
+          </div>
+          <div>
+            <label for="text">Text : </label>
+            <input type="text" name="text" id="text" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
