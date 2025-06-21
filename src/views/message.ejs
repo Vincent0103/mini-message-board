@@ -10,25 +10,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
-    <title><%= title %></title>
+    <title>Message from <%= user %></title>
   </head>
   <body>
     <main>
       <header>
-        <h1><%= title %></h1>
+        <h1>Message from <%= user %></h1>
       </header>
-      <section>
-        <a class="btn" href="/new">Send a new message</a>
-      </section>
-      <section>
-        <% messages.forEach(({user, added, text}) => { %>
-        <a class="message" href="/message/<%= user %>">
-          <div class="open-overlay">open</div>
-          <h3><%= user %></h3>
-          <p><i><%= added %></i></p>
-          <p><%= text %></p>
-        </a>
-        <% }) %>
+      <section class="user-message">
+        <p><i><%= added %></i></p>
+        <p><%= text %></p>
+        <a class="btn" href="/"> Go back </a>
       </section>
     </main>
   </body>
