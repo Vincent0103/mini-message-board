@@ -21,12 +21,12 @@
         <a class="btn" href="/new">Send a new message</a>
       </section>
       <section>
-        <% messages.forEach(({user, added, text}) => { %>
-        <a class="message" href="/message/<%= user %>">
+        <% messages.forEach(({authorname, creationdate, bio}) => { %>
+        <a class="message" href="/message/<%= authorname %>">
           <div class="open-overlay">open</div>
-          <h3><%= user %></h3>
-          <p><i><%= added %></i></p>
-          <p><%= text %></p>
+          <h3><%= authorname %></h3>
+          <p><i><%= creationdate %></i></p>
+          <p><%= bio %></p>
         </a>
         <% }) %>
       </section>
